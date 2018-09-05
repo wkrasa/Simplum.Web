@@ -1,0 +1,14 @@
+C:\Projects\Simplum.Web\SimplumWebApp\bin\Debug\netcoreapp2.1\SimplumWebApp.deps.json
+C:\Projects\Simplum.Web\SimplumWebApp\bin\Debug\netcoreapp2.1\SimplumWebApp.runtimeconfig.json
+C:\Projects\Simplum.Web\SimplumWebApp\bin\Debug\netcoreapp2.1\SimplumWebApp.runtimeconfig.dev.json
+C:\Projects\Simplum.Web\SimplumWebApp\bin\Debug\netcoreapp2.1\SimplumWebApp.dll
+C:\Projects\Simplum.Web\SimplumWebApp\bin\Debug\netcoreapp2.1\SimplumWebApp.pdb
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.csprojAssemblyReference.cache
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.csproj.CoreCompileInputs.cache
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.RazorAssemblyInfo.cache
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.RazorAssemblyInfo.cs
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.AssemblyInfoInputs.cache
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.AssemblyInfo.cs
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.RazorTargetAssemblyInfo.cache
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.dll
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.pdb
