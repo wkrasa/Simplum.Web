@@ -90,7 +90,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<style>\r\n    .row>div{\r\n        background: pink;\r\n        border: 1px solid black;\r\n    }\r\n</style>\r\n<div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n        <div class=\"col-12\">\r\n            <h1>Hello {{name}}</h1>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-2\">\r\n            <ul class=\"nav\">\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link active\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Home</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/sows\" routerLinkActive=\"active\">Sows</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" href=\"#\">Link</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/errorlink\" routerLinkActive=\"active\">Error</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"col-10\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+module.exports = "\r\n<style>\r\n  .row > div {\r\n    background: pink;\r\n    border: 1px solid black;\r\n  }\r\n</style>\r\n<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      <h1>Hello 222 {{name}}</h1>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-2\">\r\n      <ul class=\"nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link active\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Home</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/sows\" routerLinkActive=\"active\">Sows</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Link</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/errorlink\" routerLinkActive=\"active\">Error</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-10\">\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"btn-group btn-group-toggle\">\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.left\"> Left (pre-checked)\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.middle\"> Middle\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.right\"> Right\r\n  </label>\r\n</div>\r\n<hr>\r\n<pre>{{model | json}}</pre>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -114,6 +114,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
+        this.model = {};
         this.title = 'SimplumWebApp222';
     }
     AppComponent = __decorate([
@@ -143,12 +144,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _app_component_app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component/app.component */ "./src/app/app.component/app.component.ts");
-/* harmony import */ var _dashboard_component_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dashboard.component/dashboard.component */ "./src/app/dashboard.component/dashboard.component.ts");
-/* harmony import */ var _page_not_found_component_pagenotfound_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./page-not-found.component/pagenotfound.component */ "./src/app/page-not-found.component/pagenotfound.component.ts");
-/* harmony import */ var _piglets_producer_sows_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./piglets-producer/sows.module */ "./src/app/piglets-producer/sows.module.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _infrastructure_infrastructure_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./infrastructure/infrastructure.module */ "./src/app/infrastructure/infrastructure.module.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _app_component_app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component/app.component */ "./src/app/app.component/app.component.ts");
+/* harmony import */ var _dashboard_component_dashboard_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dashboard.component/dashboard.component */ "./src/app/dashboard.component/dashboard.component.ts");
+/* harmony import */ var _page_not_found_component_pagenotfound_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./page-not-found.component/pagenotfound.component */ "./src/app/page-not-found.component/pagenotfound.component.ts");
+/* harmony import */ var _piglets_producer_sows_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./piglets-producer/sows.module */ "./src/app/piglets-producer/sows.module.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _infrastructure_infrastructure_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./infrastructure/infrastructure.module */ "./src/app/infrastructure/infrastructure.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -158,7 +160,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-// import { NgbPaginationModule, NgbAlertModule, NgbDatepicker } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -258,17 +260,18 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-                _piglets_producer_sows_module__WEBPACK_IMPORTED_MODULE_6__["SowsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
-                _infrastructure_infrastructure_module__WEBPACK_IMPORTED_MODULE_8__["InfrastructureModule"]
+                _piglets_producer_sows_module__WEBPACK_IMPORTED_MODULE_7__["SowsModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
+                _infrastructure_infrastructure_module__WEBPACK_IMPORTED_MODULE_9__["InfrastructureModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbModule"]
             ],
             declarations: [
-                _app_component_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _dashboard_component_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"],
-                _page_not_found_component_pagenotfound_component__WEBPACK_IMPORTED_MODULE_5__["PageNotFoundComponent"]
+                _app_component_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _dashboard_component_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["DashboardComponent"],
+                _page_not_found_component_pagenotfound_component__WEBPACK_IMPORTED_MODULE_6__["PageNotFoundComponent"]
             ],
             providers: [],
-            bootstrap: [_app_component_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            bootstrap: [_app_component_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -302,7 +305,7 @@ var DashboardComponent = /** @class */ (function () {
     DashboardComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'dashboard',
-            template: "<h1>Dahsboard component</h1>",
+            template: "<h1>Dahsboard component 22</h1>",
         })
     ], DashboardComponent);
     return DashboardComponent;

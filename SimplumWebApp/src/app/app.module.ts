@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-// import { NgbPaginationModule, NgbAlertModule, NgbDatepicker } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPaginationModule, NgbAlertModule, NgbDatepicker, NgbButtonsModule, NgbCheckBox, NgbRadioGroup  } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 import { AppComponent } from './app.component/app.component';
 import { DashboardComponent } from './dashboard.component/dashboard.component';
@@ -10,6 +11,8 @@ import { PageNotFoundComponent } from './page-not-found.component/pagenotfound.c
 import { SowsModule } from './piglets-producer/sows.module';
 import { AppRoutingModule } from './app-routing.module';
 import { InfrastructureModule } from './infrastructure/infrastructure.module';
+
+
 
 
 /*
@@ -104,7 +107,8 @@ check services:
     FormsModule,
     SowsModule,
     AppRoutingModule,
-    InfrastructureModule],
+    InfrastructureModule,
+    NgbModule],
   declarations: [
     AppComponent,
     DashboardComponent,
