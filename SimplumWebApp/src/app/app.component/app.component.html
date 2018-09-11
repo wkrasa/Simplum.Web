@@ -8,7 +8,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
-      <h1>Hello 222 {{name}}</h1>
+      <h1>Hello {{name}}</h1>
     </div>
   </div>
   <div class="row">
@@ -28,8 +28,8 @@
         </li>
       </ul>
     </div>
-    <div class="col-10">
-      <router-outlet></router-outlet>
+    <div class="col-10" [@routerTransition]="getState(o)">
+      <router-outlet #o="outlet"></router-outlet>
     </div>
   </div>
 </div>

@@ -6,8 +6,8 @@ import { SowDetailsComponent } from './sow-details.component';
 
 const routes: Routes = [
     //{ path: 'crisis-center', component: CrisisListComponent },
-    { path: 'sows', component: SowsListComponent },
-    { path: 'sow-details/:id', component: SowDetailsComponent }
+  { path: 'sows', component: SowsListComponent, data: { state: 'sows' } },
+  { path: 'sow-details/:id', component: SowDetailsComponent, data: { state: 'sow-details' } }
 ];
 
 @NgModule({

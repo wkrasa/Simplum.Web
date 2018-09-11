@@ -5,9 +5,9 @@ import { DashboardComponent } from './dashboard.component/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found.component/pagenotfound.component';
 
 const routes: Routes = [
-    { path: 'dashboard', component: DashboardComponent },
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: '**', component: PageNotFoundComponent }
+  { path: 'dashboard', component: DashboardComponent, data: { state: 'dashboard' }  },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full', data: { state: 'dashboard' } },
+  { path: '**', component: PageNotFoundComponent, data: { state: 'notfound' } }
 ];
 
 @NgModule({

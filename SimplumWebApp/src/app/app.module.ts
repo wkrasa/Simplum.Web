@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 import { NgbPaginationModule, NgbAlertModule, NgbDatepicker, NgbButtonsModule, NgbCheckBox, NgbRadioGroup  } from '@ng-bootstrap/ng-bootstrap';
@@ -11,9 +12,6 @@ import { PageNotFoundComponent } from './page-not-found.component/pagenotfound.c
 import { SowsModule } from './piglets-producer/sows.module';
 import { AppRoutingModule } from './app-routing.module';
 import { InfrastructureModule } from './infrastructure/infrastructure.module';
-
-
-
 
 /*
 - mock backend
@@ -104,6 +102,7 @@ check services:
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     SowsModule,
     AppRoutingModule,

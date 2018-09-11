@@ -11,3 +11,4 @@ C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.Asse
 C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.RazorTargetAssemblyInfo.cache
 C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.dll
 C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.pdb
+C:\Projects\Simplum.Web\SimplumWebApp\obj\Debug\netcoreapp2.1\SimplumWebApp.csprojAssemblyReference.cache
