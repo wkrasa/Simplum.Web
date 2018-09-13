@@ -3,18 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { MessageBoxService } from './message-box.service';
 import { ModalDialogComponent } from './modal-dialog.component';
+import { BlinkDirective } from './blink.directive';
+import { PopupComponent } from './popup/popup.component';
+import { PopupService } from './popup/popup.service';
 
-export { MessageBoxService}
+export { ModalDialogComponent }
+export { MessageBoxService }
+export { BlinkDirective }
+export { PopupService, PopupComponent }
 
 @NgModule({
-    imports: [],
+    imports: [BrowserModule],
     declarations: [
-        ModalDialogComponent
+      ModalDialogComponent,
+      BlinkDirective,
+      PopupComponent
     ],
     providers: [
-        MessageBoxService],
+      MessageBoxService],
     exports: [
-        ModalDialogComponent
+      ModalDialogComponent,
+      BlinkDirective,
+      PopupComponent
     ]
 })
 export class InfrastructureModule { }

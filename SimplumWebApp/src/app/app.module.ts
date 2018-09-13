@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard.component/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found.component/pagenotfound.component';
 import { SowsModule } from './piglets-producer/sows.module';
 import { AppRoutingModule } from './app-routing.module';
-import { InfrastructureModule } from './infrastructure/infrastructure.module';
+import { InfrastructureModule, PopupService, PopupComponent } from './infrastructure/infrastructure.module';
 
 /*
 - mock backend
@@ -31,9 +31,14 @@ import { InfrastructureModule } from './infrastructure/infrastructure.module';
 --- sgc reports
 
 #==========
+- create popup component
+#==========
+- play with ElementRef
+#==========
 check services:
  templateRef: TemplateRef<DelayContext>,
      viewContainerRef: ViewContainerRef
+ -- https://itnext.io/angular-create-your-own-modal-boxes-20bb663084a1
 #==========
 - Debugger for Chrome extension
 #==========
@@ -112,7 +117,11 @@ check services:
     AppComponent,
     DashboardComponent,
     PageNotFoundComponent],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    PopupService],
+  bootstrap: [
+    AppComponent],
+  entryComponents: [
+    PopupComponent],
 })
 export class AppModule { }

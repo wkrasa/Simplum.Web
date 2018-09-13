@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+.custom-modal {
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  margin:  auto; 
+  left: 0;
+  right: 0;
+  background: #cdcdcd;
+  box-sizing: content-box;
+  border: solid 1px gray;
+  text-align: center;
+  vertical-align: central;
+}
+
+  .custom-modal.hidden {
+    display: none;
+  }
+
+  .red{
+    color: red;
+    font-weight: bold;
+  }

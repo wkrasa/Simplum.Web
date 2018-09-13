@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\n\n.custom-modal {\n  position: fixed;\n  width: 500px;\n  height: 200px;\n  margin:  auto; \n  left: 0;\n  right: 0;\n  background: #cdcdcd;\n  box-sizing: content-box;\n  border: solid 1px gray;\n  text-align: center;\n  vertical-align: central;\n}\n\n.custom-modal.hidden {\n    display: none;\n  }\n\n.red{\r\n    color: red;\r\n    font-weight: bold;\r\n  }\n"
 
 /***/ }),
 

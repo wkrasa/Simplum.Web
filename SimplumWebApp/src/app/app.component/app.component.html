@@ -48,6 +48,16 @@
 <hr>
 <pre>{{model | json}}</pre>
 
+<modal-dialog [isVisible]="dialogVisible" #dialog>
+  <span (click)="onCloseModal(dialog)">close me</span>
+  <div>test</div>
+</modal-dialog>
+
+<span (click)="onModalToggle(dialog)">show/hide</span>
+<div blink color1="yellow" color2="pink">blink</div>
+
+<span (click)="onShowMessagePopup('test')">show popup</span>
+
 
 
 
