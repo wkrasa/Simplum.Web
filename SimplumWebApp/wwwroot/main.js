@@ -90,7 +90,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<style>\r\n  .row > div {\r\n    background: pink;\r\n    border: 1px solid black;\r\n  }\r\n</style>\r\n<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      <h1>Hello {{name}}</h1>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-2\">\r\n      <ul class=\"nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link active\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Home</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/sows\" routerLinkActive=\"active\">Sows</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Link</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/errorlink\" routerLinkActive=\"active\">Error</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-10\" [@routerTransition]=\"getState(o)\">\r\n      <router-outlet #o=\"outlet\"></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"btn-group btn-group-toggle\">\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.left\"> Left (pre-checked)\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.middle\"> Middle\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.right\"> Right\r\n  </label>\r\n</div>\r\n<hr>\r\n<pre>{{model | json}}</pre>\r\n\r\n<modal-dialog [isVisible]=\"dialogVisible\" #dialog>\r\n  <span (click)=\"onCloseModal(dialog)\">close me</span>\r\n  <div>test</div>\r\n</modal-dialog>\r\n\r\n<span (click)=\"onModalToggle(dialog)\">show/hide</span>\r\n<div blink color1=\"yellow\" color2=\"pink\">blink</div>\r\n\r\n<span (click)=\"onShowMessagePopup('test')\">show popup</span>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+module.exports = "\r\n<style>\r\n  .row > div {\r\n    background: pink;\r\n    border: 1px solid black;\r\n  }\r\n</style>\r\n<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      <h1>Hello {{name}}</h1>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-2\">\r\n      <ul class=\"nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link active\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Home</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/sows\" routerLinkActive=\"active\">Sows</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Link</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/errorlink\" routerLinkActive=\"active\">Error</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-10\" [@routerTransition]=\"getState(o)\">\r\n      <router-outlet #o=\"outlet\"></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"btn-group btn-group-toggle\">\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.left\"> Left (pre-checked)\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.middle\"> Middle\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.right\"> Right\r\n  </label>\r\n</div>\r\n<hr>\r\n<pre>{{model | json}}</pre>\r\n\r\n<modal-dialog [isVisible]=\"dialogVisible\" #dialog>\r\n  <span (click)=\"onCloseModal(dialog)\">close me</span>\r\n  <div>test</div>\r\n</modal-dialog>\r\n\r\n<span (click)=\"onModalToggle(dialog)\">show/hide</span>\r\n<div blink color1=\"yellow\" color2=\"pink\">blink</div>\r\n\r\n<span (click)=\"onShowMessagePopup('test')\">show popup</span>\r\n\r\n<tabs>\r\n  <tab state=\"active\" header=\"tab 1\">\r\n    <div>\r\n      tab 1\r\n    </div>\r\n  </tab>\r\n  <tab header=\"tab 2\">\r\n    <div>\r\n      tab 2\r\n    </div>\r\n  </tab>\r\n  <tab header=\"tab 3\">\r\n    <div>\r\n      tab 3\r\n    </div>\r\n  </tab>\r\n</tabs>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -242,12 +242,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 #==========
 - create popup component
 #==========
+- create toggle component (https://blog.angularindepth.com/build-a-toggle-component-6e8f44889c2c)
+#==========
 - play with ElementRef
+#==========
+- add modal service (https://itnext.io/angular-create-your-own-modal-boxes-20bb663084a1)
 #==========
 check services:
  templateRef: TemplateRef<DelayContext>,
      viewContainerRef: ViewContainerRef
- -- https://itnext.io/angular-create-your-own-modal-boxes-20bb663084a1
 #==========
 - Debugger for Chrome extension
 #==========
@@ -535,6 +538,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _popup_popup_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./popup/popup.service */ "./src/app/infrastructure/popup/popup.service.ts");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PopupService", function() { return _popup_popup_service__WEBPACK_IMPORTED_MODULE_6__["PopupService"]; });
 
+/* harmony import */ var _tabs_tab_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./tabs/tab.component */ "./src/app/infrastructure/tabs/tab.component.ts");
+/* harmony import */ var _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./tabs/tabs.component */ "./src/app/infrastructure/tabs/tabs.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -552,6 +557,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+//export { TabComponent, TabsComponent }
 var InfrastructureModule = /** @class */ (function () {
     function InfrastructureModule() {
     }
@@ -561,7 +569,9 @@ var InfrastructureModule = /** @class */ (function () {
             declarations: [
                 _modal_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ModalDialogComponent"],
                 _blink_directive__WEBPACK_IMPORTED_MODULE_4__["BlinkDirective"],
-                _popup_popup_component__WEBPACK_IMPORTED_MODULE_5__["PopupComponent"]
+                _popup_popup_component__WEBPACK_IMPORTED_MODULE_5__["PopupComponent"],
+                _tabs_tab_component__WEBPACK_IMPORTED_MODULE_7__["TabComponent"],
+                _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_8__["TabsComponent"]
             ],
             providers: [
                 _message_box_service__WEBPACK_IMPORTED_MODULE_2__["MessageBoxService"]
@@ -569,7 +579,9 @@ var InfrastructureModule = /** @class */ (function () {
             exports: [
                 _modal_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ModalDialogComponent"],
                 _blink_directive__WEBPACK_IMPORTED_MODULE_4__["BlinkDirective"],
-                _popup_popup_component__WEBPACK_IMPORTED_MODULE_5__["PopupComponent"]
+                _popup_popup_component__WEBPACK_IMPORTED_MODULE_5__["PopupComponent"],
+                _tabs_tab_component__WEBPACK_IMPORTED_MODULE_7__["TabComponent"],
+                _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_8__["TabsComponent"]
             ]
         })
     ], InfrastructureModule);
@@ -874,6 +886,135 @@ var PopupService = /** @class */ (function () {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]])
     ], PopupService);
     return PopupService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/infrastructure/tabs/tab.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/infrastructure/tabs/tab.component.ts ***!
+  \******************************************************/
+/*! exports provided: TabComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabComponent", function() { return TabComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+/* harmony import */ var _tabs_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs.component */ "./src/app/infrastructure/tabs/tabs.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TabComponent = /** @class */ (function () {
+    function TabComponent(tabs) {
+        this.tabs = tabs;
+        this.state = 'closed';
+        this.header = 'tab';
+        this.tabs.addTab(this);
+    }
+    TabComponent.prototype.ngOnInit = function () {
+        console.log('state: ' + this.state);
+    };
+    TabComponent.prototype.activate = function () {
+        this.state = 'active';
+    };
+    TabComponent.prototype.close = function () {
+        this.state = 'closed';
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], TabComponent.prototype, "state", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], TabComponent.prototype, "header", void 0);
+    TabComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'tab',
+            template: "\n    <div class=\"tab\" [hidden]=\"state=='closed'\" [@state]=\"state\">\n      <ng-content></ng-content>\n    </div>\n  ",
+            styles: ["\n    .tab{\n      width: 200px;\n      height: 100px;\n      border: solid 1px gray;\n    }\n  "],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('state', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('active', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ transform: 'translateX(0)', opacity: 1 })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('closed', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ transform: 'translateX(30%)', opacity: 0 })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('closed=>active', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('300ms ease-in')),
+                ])
+            ],
+        }),
+        __metadata("design:paramtypes", [_tabs_component__WEBPACK_IMPORTED_MODULE_2__["TabsComponent"]])
+    ], TabComponent);
+    return TabComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/infrastructure/tabs/tabs.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/infrastructure/tabs/tabs.component.ts ***!
+  \*******************************************************/
+/*! exports provided: TabsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsComponent", function() { return TabsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var TabsComponent = /** @class */ (function () {
+    function TabsComponent() {
+        this.tabs = [];
+    }
+    TabsComponent.prototype.ngOnInit = function () {
+    };
+    TabsComponent.prototype.addTab = function (tab) {
+        this.tabs.push(tab);
+    };
+    TabsComponent.prototype.selectTab = function (tab) {
+        this.tabs.forEach(function (x) { return x.close(); });
+        tab.activate();
+    };
+    TabsComponent.prototype.isSelected = function (tab) {
+        return tab.state === 'active';
+    };
+    TabsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'tabs',
+            template: "\n    <ul class=\"header\">\n      <li *ngFor=\"let tab of tabs\"  [class.selected]=\"isSelected(tab)\" (click)=\"selectTab(tab)\" [@selected]=\"isSelected(tab)\">| {{tab.header}}</li>\n    </ul>\n    <ng-content></ng-content>    \n  ",
+            styles: ["\n    .header{\n      height: 30px;\n      clear: both;\n    }\n    .header li{\n       float: left;\n       list-style-type: none;\n    }\n    .selected{\n      background: gray;     \n    }\n  "],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('selected', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('true', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ background: 'gray' })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('false', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ background: 'white' })),
+                    //transition('active=>closed', [animate('500ms ease-in', style({ opacity: 0, transform: 'translateX(30%)' }))]),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('*=>*', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('300ms ease-in')),
+                ])
+            ]
+        })
+    ], TabsComponent);
+    return TabsComponent;
 }());
 
 

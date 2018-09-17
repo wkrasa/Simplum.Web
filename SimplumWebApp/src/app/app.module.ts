@@ -33,12 +33,15 @@ import { InfrastructureModule, PopupService, PopupComponent } from './infrastruc
 #==========
 - create popup component
 #==========
+- create toggle component (https://blog.angularindepth.com/build-a-toggle-component-6e8f44889c2c)
+#==========
 - play with ElementRef
+#==========
+- add modal service (https://itnext.io/angular-create-your-own-modal-boxes-20bb663084a1)
 #==========
 check services:
  templateRef: TemplateRef<DelayContext>,
      viewContainerRef: ViewContainerRef
- -- https://itnext.io/angular-create-your-own-modal-boxes-20bb663084a1
 #==========
 - Debugger for Chrome extension
 #==========
