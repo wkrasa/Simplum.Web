@@ -38,4 +38,8 @@ export class AppComponent {
   onShowMessagePopup(message: string): void {
     this.popupService.show(message);
   }
+
+  onToggleStateChanged(state: boolean) {
+    console.log('toogle state: ' + state);
+  }
 }

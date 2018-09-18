@@ -8,6 +8,7 @@ import { PopupComponent } from './popup/popup.component';
 import { PopupService } from './popup/popup.service';
 import { TabComponent } from './tabs/tab.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 export { ModalDialogComponent }
 export { MessageBoxService }
@@ -22,7 +23,8 @@ export { PopupService, PopupComponent }
       BlinkDirective,
       PopupComponent,
       TabComponent,
-      TabsComponent
+      TabsComponent,
+      ToggleComponent
     ],
     providers: [
       MessageBoxService],
@@ -31,7 +33,8 @@ export { PopupService, PopupComponent }
       BlinkDirective,
       PopupComponent,
       TabComponent,
-      TabsComponent
+      TabsComponent,
+      ToggleComponent
     ]
 })
 export class InfrastructureModule { }
