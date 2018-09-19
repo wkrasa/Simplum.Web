@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger, animateChild, query } from '@angular/animations';
 
 @Component({
   selector: 'toggle',
   template: `
-    <div class="toggle" (click)="toggleState()">
+    <div class="toggle" (click)="toggleState()" [@state]="state">
         <div class="toggle-button" [class.on]="isOn()" [class.off]="!isOn()" [@state-button]="state"></div>
     </div>
   `,
@@ -38,11 +38,12 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
     }
   `],
   animations: [
-    //trigger('state', [
-    //  state('on', style({ background: 'green' })),
-    //  state('off', style({ background: 'pink' })),
-    //  transition('*=>*',  animate('300ms ease-in')),
-    //]),
+    trigger('state', [
+      state('on', style({ background: 'green' })),
+      state('off', style({ background: 'pink' })),
+      transition('*=>*', [animate('300ms ease-in'), query('@state-button', [
+        animateChild() ])])
+    ]),
     trigger('state-button', [
       state('on', style({ left: 0,})),
       state('off', style({ left: 70 })),

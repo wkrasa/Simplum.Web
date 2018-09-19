@@ -15,6 +15,7 @@ export class AppComponent {
   name = 'test';
   title = 'SimplumWebApp';
   dialogVisible: boolean = true;
+  btState = 'off';
 
   constructor(private popupService: PopupService) { }
 
@@ -41,5 +42,6 @@ export class AppComponent {
 
   onToggleStateChanged(state: boolean) {
     console.log('toogle state: ' + state);
+    this.btState = state ? 'on' : 'off';
   }
 }

@@ -76,8 +76,10 @@
   </tab>
 </tabs>
 
-<toggle state="on" (stateChanged)="onToggleStateChanged($event)"></toggle>
-
+<toggle [state]="btState" (stateChanged)="onToggleStateChanged($event)"></toggle>
+<toggle [state]="btState" (stateChanged)="onToggleStateChanged($event)"></toggle>
+<div *ngIf="btState==='on'">on</div>
+<div *ngIf="btState==='off'">off</div>
 
 
 

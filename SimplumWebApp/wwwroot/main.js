@@ -90,7 +90,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<style>\r\n  .row > div {\r\n    background: pink;\r\n    border: 1px solid black;\r\n  }\r\n</style>\r\n<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      <h1>Hello {{name}}</h1>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-2\">\r\n      <ul class=\"nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link active\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Home</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/sows\" routerLinkActive=\"active\">Sows</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Link</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/errorlink\" routerLinkActive=\"active\">Error</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-10\" [@routerTransition]=\"getState(o)\">\r\n      <router-outlet #o=\"outlet\"></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"btn-group btn-group-toggle\">\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.left\"> Left (pre-checked)\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.middle\"> Middle\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.right\"> Right\r\n  </label>\r\n</div>\r\n<hr>\r\n<pre>{{model | json}}</pre>\r\n\r\n<modal-dialog [isVisible]=\"dialogVisible\" #dialog>\r\n  <span (click)=\"onCloseModal(dialog)\">close me</span>\r\n  <div>test</div>\r\n</modal-dialog>\r\n\r\n<span (click)=\"onModalToggle(dialog)\">show/hide</span>\r\n<div blink color1=\"yellow\" color2=\"pink\">blink</div>\r\n\r\n<span (click)=\"onShowMessagePopup('test')\">show popup</span>\r\n\r\n<tabs>\r\n  <tab state=\"active\" header=\"tab 1\">\r\n    <div>\r\n      tab 1\r\n    </div>\r\n  </tab>\r\n  <tab header=\"tab 2\">\r\n    <div>\r\n      tab 2\r\n    </div>\r\n  </tab>\r\n  <tab header=\"tab 3\">\r\n    <div>\r\n      tab 3\r\n    </div>\r\n  </tab>\r\n</tabs>\r\n\r\n<toggle state=\"on\" (stateChanged)=\"onToggleStateChanged($event)\"></toggle>\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+module.exports = "\r\n<style>\r\n  .row > div {\r\n    background: pink;\r\n    border: 1px solid black;\r\n  }\r\n</style>\r\n<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      <h1>Hello {{name}}</h1>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-2\">\r\n      <ul class=\"nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link active\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Home</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/sows\" routerLinkActive=\"active\">Sows</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Link</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/errorlink\" routerLinkActive=\"active\">Error</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-10\" [@routerTransition]=\"getState(o)\">\r\n      <router-outlet #o=\"outlet\"></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"btn-group btn-group-toggle\">\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.left\"> Left (pre-checked)\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.middle\"> Middle\r\n  </label>\r\n  <label class=\"btn-primary\" ngbButtonLabel>\r\n    <input type=\"checkbox\" ngbButton [(ngModel)]=\"model.right\"> Right\r\n  </label>\r\n</div>\r\n<hr>\r\n<pre>{{model | json}}</pre>\r\n\r\n<modal-dialog [isVisible]=\"dialogVisible\" #dialog>\r\n  <span (click)=\"onCloseModal(dialog)\">close me</span>\r\n  <div>test</div>\r\n</modal-dialog>\r\n\r\n<span (click)=\"onModalToggle(dialog)\">show/hide</span>\r\n<div blink color1=\"yellow\" color2=\"pink\">blink</div>\r\n\r\n<span (click)=\"onShowMessagePopup('test')\">show popup</span>\r\n\r\n<tabs>\r\n  <tab state=\"active\" header=\"tab 1\">\r\n    <div>\r\n      tab 1\r\n    </div>\r\n  </tab>\r\n  <tab header=\"tab 2\">\r\n    <div>\r\n      tab 2\r\n    </div>\r\n  </tab>\r\n  <tab header=\"tab 3\">\r\n    <div>\r\n      tab 3\r\n    </div>\r\n  </tab>\r\n</tabs>\r\n\r\n<toggle [state]=\"btState\" (stateChanged)=\"onToggleStateChanged($event)\"></toggle>\r\n<toggle [state]=\"btState\" (stateChanged)=\"onToggleStateChanged($event)\"></toggle>\r\n<div *ngIf=\"btState==='on'\">on</div>\r\n<div *ngIf=\"btState==='off'\">off</div>\r\n\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -126,6 +126,7 @@ var AppComponent = /** @class */ (function () {
         this.name = 'test';
         this.title = 'SimplumWebApp';
         this.dialogVisible = true;
+        this.btState = 'off';
     }
     AppComponent.prototype.getState = function (outlet) {
         console.log(outlet.activatedRouteData.state);
@@ -146,6 +147,7 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.onToggleStateChanged = function (state) {
         console.log('toogle state: ' + state);
+        this.btState = state ? 'on' : 'off';
     };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1085,14 +1087,16 @@ var ToggleComponent = /** @class */ (function () {
     ToggleComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'toggle',
-            template: "\n    <div class=\"toggle\" (click)=\"toggleState()\">\n        <div class=\"toggle-button\" [class.on]=\"isOn()\" [class.off]=\"!isOn()\" [@state-button]=\"state\"></div>\n    </div>\n  ",
+            template: "\n    <div class=\"toggle\" (click)=\"toggleState()\" [@state]=\"state\">\n        <div class=\"toggle-button\" [class.on]=\"isOn()\" [class.off]=\"!isOn()\" [@state-button]=\"state\"></div>\n    </div>\n  ",
             styles: ["\n    .toggle{\n      width: 140px;\n      height: 70px;\n      border: solid 1px gray;\n      border-radius: 25px;\n      position: relative;\n    }\n\n  .toggle-button{\n        width: 64px;\n        height: 64px;\n        margin: 2px;\n        border: solid 1px black;\n        border-radius: 50%;\n        float: left;\n        position: absolute;\n      }\n\n    .toggle-button.on{\n      left: 0;\n      background: green;\n    }\n\n  .toggle-button.off{\n      left: 70px;\n      background: pink;\n    }\n  "],
             animations: [
-                //trigger('state', [
-                //  state('on', style({ background: 'green' })),
-                //  state('off', style({ background: 'pink' })),
-                //  transition('*=>*',  animate('300ms ease-in')),
-                //]),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('state', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('on', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ background: 'green' })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('off', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ background: 'pink' })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('*=>*', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('300ms ease-in'), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])('@state-button', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animateChild"])()
+                        ])])
+                ]),
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('state-button', [
                     Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('on', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ left: 0, })),
                     Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('off', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ left: 70 })),
