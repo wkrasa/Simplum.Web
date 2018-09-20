@@ -29,7 +29,7 @@ import { animate, state, style, transition, trigger, animateChild, query } from 
 
     .toggle-button.on{
       left: 0;
-      background: green;
+      background: red;
     }
 
   .toggle-button.off{

@@ -9,6 +9,7 @@ import { PopupService } from './popup/popup.service';
 import { TabComponent } from './tabs/tab.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { TooltipDirective } from './tootlip.directive';
 
 export { ModalDialogComponent }
 export { MessageBoxService }
@@ -24,7 +25,8 @@ export { PopupService, PopupComponent }
       PopupComponent,
       TabComponent,
       TabsComponent,
-      ToggleComponent
+      ToggleComponent,
+      TooltipDirective
     ],
     providers: [
       MessageBoxService],
@@ -34,7 +36,8 @@ export { PopupService, PopupComponent }
       PopupComponent,
       TabComponent,
       TabsComponent,
-      ToggleComponent
+      ToggleComponent,
+      TooltipDirective
     ]
 })
 export class InfrastructureModule { }

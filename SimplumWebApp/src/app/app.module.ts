@@ -31,9 +31,19 @@ import { InfrastructureModule, PopupService, PopupComponent } from './infrastruc
 --- sgc reports
 
 #==========
+  AUTO CHANGES DETECT
+Updating all NuGet packages (I was running things in Visual Studio).
+Updating all packages via ng update --all (that is if you are lucky), I had to update the core first and then find my way trough the rest.
+Then I do a ng build --prod because some issues are only discovered then.
+Then an ng serve (I think this is not necessary)
+Delete the files from the dist folder
+#==========
 - create popup component
 #==========
-- create toggle component (https://blog.angularindepth.com/build-a-toggle-component-6e8f44889c2c)
++ create toggle component (https://blog.angularindepth.com/build-a-toggle-component-6e8f44889c2c)
+#==========
+- @ViewChild and @ViewChildren
+- other queries
 #==========
 - play with ElementRef
 #==========

@@ -5,7 +5,7 @@ declare var $: any;
 @Component({
   selector: 'modal-dialog',
   template: `<div class="custom-modal" [@isVisible]="isVisible" [ngClass]="myClasses">
-            <div>header 2</div>
+            <div>header 222</div>
                   <ng-content></ng-content>
             </div>`,
   animations: [trigger('isVisible', [
