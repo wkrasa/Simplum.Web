@@ -22,3 +22,17 @@
     color: red;
     font-weight: bold;
   }
+
+
+.custom-modal-service {
+  position: fixed;
+  margin: auto;
+  top: 300px;
+  left: 50%;
+  background: #cdcdcd;
+  box-sizing: content-box;
+  border: solid 1px gray;
+  text-align: center;
+  vertical-align: central;
+  z-index: 100;
+}

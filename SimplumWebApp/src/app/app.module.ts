@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard.component/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found.component/pagenotfound.component';
 import { SowsModule } from './piglets-producer/sows.module';
 import { AppRoutingModule } from './app-routing.module';
-import { InfrastructureModule, PopupService, PopupComponent } from './infrastructure/infrastructure.module';
+import { InfrastructureModule, PopupService, PopupComponent, ModalDialogService } from './infrastructure/infrastructure.module';
 
 /*
 - mock backend
@@ -131,7 +131,8 @@ check services:
     DashboardComponent,
     PageNotFoundComponent],
   providers: [
-    PopupService],
+    PopupService,
+    ModalDialogService],
   bootstrap: [
     AppComponent],
   entryComponents: [

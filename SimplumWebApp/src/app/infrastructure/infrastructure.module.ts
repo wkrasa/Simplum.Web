@@ -10,12 +10,13 @@ import { TabComponent } from './tabs/tab.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { TooltipDirective } from './tootlip.directive';
+import { ModalDialogService } from './modal-dialog-service/modal-dialog.service';
 
 export { ModalDialogComponent }
 export { MessageBoxService }
 export { BlinkDirective }
 export { PopupService, PopupComponent }
-//export { TabComponent, TabsComponent }
+export { ModalDialogService }
 
 @NgModule({
     imports: [BrowserModule],
