@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class ModalDialogService{
 
-  private _div: HTMLDivElement = null;
+  private _div: HTMLDivElement | null  = null;
   private _componentRef: any;
   
   constructor(private injector: Injector,
@@ -35,6 +35,7 @@ export class ModalDialogService{
   }
 
   getComponentRef<T>() {
+    console.dir(this._componentRef);
     return this._componentRef.instance as T;
   }
 

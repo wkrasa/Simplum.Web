@@ -54,7 +54,7 @@ export class AppComponent {
     }
     else {
       this.modalDialogService.show(PageNotFoundComponent, { inputs: { text: '123123' } });
-      console.dir(this.modalDialogService.getComponentRef<PageNotFoundComponent>());
+      this.modalDialogService.getComponentRef<PageNotFoundComponent>();
       this.modalDialogService.getComponentRef<PageNotFoundComponent>().text = '3333333333';
       this.modalDialogService.getComponentRef<PageNotFoundComponent>().clicked.subscribe(() => {
         console.log('works!!!!!!!!!!!');

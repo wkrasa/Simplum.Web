@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { InfrastructureModule, PopupService, PopupComponent, ModalDialogService } from './infrastructure/infrastructure.module';
 
 /*
+
 - mock backend
 - login/auth
 - roles
@@ -30,6 +31,9 @@ import { InfrastructureModule, PopupService, PopupComponent, ModalDialogService 
 --- sgc details
 --- sgc reports
 
+#==========
+- run loin/register tutorial from:
+ http://jasonwatmore.com/post/2018/05/16/angular-6-user-registration-and-login-example-tutorial
 #==========
   AUTO CHANGES DETECT
 Updating all NuGet packages (I was running things in Visual Studio).

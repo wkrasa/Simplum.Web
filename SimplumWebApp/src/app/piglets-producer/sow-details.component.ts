@@ -19,7 +19,7 @@ import { SowsService } from './sows.service';
 })
 export class SowDetailsComponent implements OnInit
 {
-    sow: Sow;
+  sow: Sow | undefined;
 
     constructor(
         private route: ActivatedRoute,
@@ -32,7 +32,9 @@ export class SowDetailsComponent implements OnInit
     }
 
     getHero(): void {
-        const id = +this.route.snapshot.paramMap.get('id');
+      const idStr = this.route.snapshot.paramMap.get('id');
+      if (idStr == null) { return; }
+      const id = +idStr;
         this.sowsService.getSow(id)
             .subscribe(sow => this.sow = sow);
     }
