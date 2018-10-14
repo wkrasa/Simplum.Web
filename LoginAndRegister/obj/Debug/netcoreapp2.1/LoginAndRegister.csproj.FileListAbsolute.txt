@@ -1,0 +1,13 @@
+C:\Projects\Simplum.Web\LoginAndRegister\bin\Debug\netcoreapp2.1\LoginAndRegister.deps.json
+C:\Projects\Simplum.Web\LoginAndRegister\bin\Debug\netcoreapp2.1\LoginAndRegister.runtimeconfig.json
+C:\Projects\Simplum.Web\LoginAndRegister\bin\Debug\netcoreapp2.1\LoginAndRegister.runtimeconfig.dev.json
+C:\Projects\Simplum.Web\LoginAndRegister\bin\Debug\netcoreapp2.1\LoginAndRegister.dll
+C:\Projects\Simplum.Web\LoginAndRegister\bin\Debug\netcoreapp2.1\LoginAndRegister.pdb
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.csproj.CoreCompileInputs.cache
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.RazorAssemblyInfo.cache
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.RazorAssemblyInfo.cs
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.AssemblyInfoInputs.cache
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.AssemblyInfo.cs
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.RazorTargetAssemblyInfo.cache
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.dll
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.pdb
