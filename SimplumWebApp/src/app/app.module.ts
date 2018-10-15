@@ -41,6 +41,17 @@ Updating all packages via ng update --all (that is if you are lucky), I had to u
 Then I do a ng build --prod because some issues are only discovered then.
 Then an ng serve (I think this is not necessary)
 Delete the files from the dist folder
+
+#==========
+- create form (with list of subitems)
+- create web api controller
+- add validation on both sides
+- create async validator for sow unique name
+- add date inout control (sow birth date)
+#==========
+- OAuth (keycloak)
+#==========
+- use docker option in VS during project creation
 #==========
 - create popup component
 #==========
@@ -116,8 +127,6 @@ check services:
 - setup for production enviroment
 #==========
 - CORS for web api
-#==========
-- OAuth (keycloak)
 #==========
 */
 

@@ -1,0 +1,67 @@
+<div class="container">
+  <h1>Sow create</h1>
+  <form name="createSowForm" #f="ngForm" (ngSubmit)="f.form.valid && onSave()">
+    <div class="form-group row">
+      <label for="name" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-4">
+        <input [(ngModel)]="sow.name" type="text" class="form-control" name="name" placeholder="Sow name" required minlength="4" uniqueSowName #name="ngModel">
+        <div *ngIf="name.invalid && (name.dirty || name.touched)">
+          <div *ngIf="name.errors.required">
+            Name is required.
+          </div>
+          <div *ngIf="name.errors.minlength">
+            Name must be at least 4 characters long.
+          </div>
+          <div *ngIf="name.errors.uniqueSowName">
+            Sow with name '{{name.errors.uniqueSowName.name}}' already exists.
+          </div>
+        </div>
+      </div>
+      <label for="elir" class="col-sm-2 col-form-label">ELiR</label>
+      <div class="col-sm-4">
+        <input [(ngModel)]="sow.elir" type="text" class="form-control" name="elir" placeholder="ELiR" uniqueSowElir minlength="4" #elir="ngModel">
+        <div *ngIf="elir.invalid && (elir.dirty || elir.touched)">
+          <div *ngIf="elir.errors.minlength">
+            ELiR must be at least 20 characters long.
+          </div>
+          <div *ngIf="elir.errors.uniqueSowElir">
+            Sow with '{{elir.errors.uniqueSowElir.elir}}' already exists.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="birh-date" class="col-sm-2 col-form-label">Birth date</label>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" name="birhDate" placeholder="Birth date" (focus)="birhDate.toggle()" ngbDatepicker #birhDate="ngbDatepicker" [(ngModel)]="sow.birthDate" required>
+        <div *ngIf="birhDate.invalid && (birhDate.dirty || birhDate.touched)">
+          <div *ngIf="birhDate.errors.required">
+            Birth date is required
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"><button type="button" (click)="birhDate.toggle()">Toggle</button></div>
+      <label for="sowStatus" class="col-sm-2 col-form-label">Status</label>
+      <div class="col-sm-4">
+        <select class="form-control" name="sowStatus" placeholder="Select status" #sowStatus="ngModel" [(ngModel)]="sow.sowStatus" required>
+          <option value="0">Normal</option>
+          <option value="1">Inseminated</option>
+          <option value="2">Pregnant</option>
+          <option value="3">Lactating</option>
+        </select>
+        <div *ngIf="sowStatus.invalid && (sowStatus.dirty || sowStatus.touched)">
+          <div *ngIf="sowStatus.errors.required">
+            Status is required
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-2">
+        <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Save</button>
+      </div>
+    </div>
+  </form>
+  <div>{{sow|json}}</div>
+  <div>{{f.form.invalid|json}}</div>
+</div>

@@ -16,6 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="src\app\piglets-producer\sow-create\sow-unique-elir.directive.js">
+      <DependentUpon>sow-unique-elir.directive.ts</DependentUpon>
+    </None>
     <None Update="src\index.html">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>

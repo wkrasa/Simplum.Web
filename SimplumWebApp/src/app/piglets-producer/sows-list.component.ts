@@ -13,6 +13,7 @@ import { SowsService } from './sows.service';
                     </li>
                 </ul>
                 <sow-edit [sow]="selectedSow"></sow-edit>
+                 <a  routerLink="/sow-create" routerLinkActive="active">Create new sow</a>
             `,
   animations: [trigger('sowState', [
     state('void', style({

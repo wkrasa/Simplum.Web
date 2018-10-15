@@ -23,19 +23,19 @@ export class AppComponent {
     private modalDialogService: ModalDialogService) { }
 
   getState(outlet) {
-    console.log(outlet.activatedRouteData.state);
+    //console.log(outlet.activatedRouteData.state);
     return outlet.activatedRouteData.state;
   }
 
   onCloseModal(dialog: ModalDialogComponent): void {
     //this.dialogVisible = false;
-    console.dir(dialog);
+    //console.dir(dialog);
     dialog.close();
   }
 
   onModalToggle(dialog: ModalDialogComponent): void {
     //this.dialogVisible = !this.dialogVisible;
-    console.dir(dialog);
+    //console.dir(dialog);
     dialog.toggle();
   }
 
@@ -44,7 +44,7 @@ export class AppComponent {
   }
 
   onToggleStateChanged(state: boolean) {
-    console.log('toogle state: ' + state);
+    //console.log('toogle state: ' + state);
     this.btState = state ? 'on' : 'off';
   }
 
@@ -57,7 +57,7 @@ export class AppComponent {
       this.modalDialogService.getComponentRef<PageNotFoundComponent>();
       this.modalDialogService.getComponentRef<PageNotFoundComponent>().text = '3333333333';
       this.modalDialogService.getComponentRef<PageNotFoundComponent>().clicked.subscribe(() => {
-        console.log('works!!!!!!!!!!!');
+        //console.log('works!!!!!!!!!!!');
         this.modalDialogService.close();
       });
     }

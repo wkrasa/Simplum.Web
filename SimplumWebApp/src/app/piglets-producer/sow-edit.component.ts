@@ -15,6 +15,7 @@ import { SowsService } from './sows.service';
                     <label>elir:
                         <input [(ngModel)]="sow.elir" placeholder="elir">
                     </label>
+                  {{sow|json}}
                 </div>
             `,
 })

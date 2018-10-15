@@ -14,7 +14,7 @@ export class BlinkDirective implements OnInit, OnDestroy {
 
   private currentColor: string;
 
-  constructor(private element: ElementRef) {    
+  constructor(private element: ElementRef) {
   }
 
   @HostListener('mouseenter') onMouseEnter() {
