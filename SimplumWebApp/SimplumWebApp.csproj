@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
 	<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked> 
-	<PostBuildEvent>ng build</PostBuildEvent> 
 	<TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+	<PostBuildEvent>ng build --aot=true </PostBuildEvent>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,5 +23,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+
+  </Target>
 
 </Project>

@@ -11,3 +11,4 @@ C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegiste
 C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.RazorTargetAssemblyInfo.cache
 C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.dll
 C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.pdb
+C:\Projects\Simplum.Web\LoginAndRegister\obj\Debug\netcoreapp2.1\LoginAndRegister.csprojAssemblyReference.cache

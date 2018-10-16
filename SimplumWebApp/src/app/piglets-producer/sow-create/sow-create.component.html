@@ -33,7 +33,7 @@
     <div class="form-group row">
       <label for="birh-date" class="col-sm-2 col-form-label">Birth date</label>
       <div class="col-sm-3">
-        <input type="text" class="form-control" name="birhDate" placeholder="Birth date" (focus)="birhDate.toggle()" ngbDatepicker #birhDate="ngbDatepicker" [(ngModel)]="sow.birthDate" required>
+        <input type="text" class="form-control" name="birthDate" placeholder="Birth date" (focus)="birhDate.toggle()" ngbDatepicker #birhDate="ngbDatepicker" [(ngModel)]="sow.birthDate" required>
         <div *ngIf="birhDate.invalid && (birhDate.dirty || birhDate.touched)">
           <div *ngIf="birhDate.errors.required">
             Birth date is required

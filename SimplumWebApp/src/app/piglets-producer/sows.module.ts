@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { SowsRoutingModule } from './sows-routing.module';
 import { SowsService } from './sows.service';
@@ -21,6 +22,7 @@ import { InfrastructureModule} from '../infrastructure/infrastructure.module';
       SowsRoutingModule,
       FormsModule,
       InfrastructureModule,
+      HttpClientModule,
       NgbModule],
     declarations: [
       SowsListComponent,

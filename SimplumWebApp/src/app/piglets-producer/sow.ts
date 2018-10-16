@@ -2,11 +2,11 @@ export class Sow {
   id: number;
   elir: string;
   name?: string;
-  birtDate: Date;
+  birthDate: Date;
   sowStatus: SowStatus;
 
   constructor() {
-    this.birtDate = new Date();
+    this.birthDate = new Date();
   }
 }
 

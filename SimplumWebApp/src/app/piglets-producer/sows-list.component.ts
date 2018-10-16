@@ -42,7 +42,8 @@ export class SowsListComponent implements OnInit
 
     private getSows(): void {
         this.sowsService.getSows()
-            .subscribe(sows => {
+          .subscribe(sows => {
+            console.dir(sows);
                 this.sows = sows;
                 if (this.sows.length > 0) {
                     this.selectedSow = this.sows[0];
